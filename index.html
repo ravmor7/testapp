@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.ico">
+    <title>UNICEF</title>
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <div id="main-wrapper">
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-toggleable-sm navbar-light">
+                <!-- Logo -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <span><img src="../assets/images/logo-light-text.png" class="light-logo" alt="UNICEF" /></span>
+                        <b><img src="../assets/images/logo-light-icon.png" alt="UNICEF" class="light-logo" /></b>
+                    </a>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                        <li class="nav-item hidden-sm-down search-box"> <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
+                            <form class="app-search">
+                                <input type="text" class="form-control" placeholder="Search & enter"> <a class="srh-btn"><i class="ti-close"></i></a> </form>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hi, Admin</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="active"> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="ti-search"></i><span class="hide-menu">Search</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <div class="page-wrapper">
+            <div class="container-fluid">
+                <div class="row page-titles">
+                    <div class="col-md-5 col-8 align-self-center">
+                        <h3 class="text-themecolor m-b-0 m-t-0">Search</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Search</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- column -->
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-block">
+                                <h4 class="card-title">Acronyms List</h4>
+                                <h6 class="card-subtitle">List of all Acronyms and its full forms</h6>
+                                <input type="text" id="mySearch" onkeyup="searchList()" class="form-control form-control-line" placeholder="Type to find Acronyms/Fullform" />
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Acronyms</th>
+                                                <th>Full Form</th>
+                                                <th>Created Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody  id="myUL">
+                        <tr><td>1</td><td><a class="text"> AAR</a></td><td><a class="text"> After-Action Review</a></td><td> 2018-05-10T15</td></tr>
+                        <tr><td>2</td><td><a class="text"> ACABQ</a></td><td><a class="text"> Advisory Committee on Administrative and Budgetary Questions</a></td><td> 2018-05-10T15</td></tr>
+                        <tr><td>3</td><td><a class="text"> ACL</a></td><td><a class="text"> Access Control List</a></td><td> 2018-05-10T15</td></tr>
+                        <tr><td>4</td><td><a class="text"> AMED</a></td><td><a class="text"> Asia and Middle East Division</a></td><td> 2018-05-10T15</td></tr>
+                        <tr><td>5</td><td><a class="text"> AMET</a></td><td><a class="text"> Aero Medical Evacuation Team</a></td><td> 2018-05-10T15</td></tr>
+                        <tr><td>6</td><td><a class="text"> AMIS</a></td><td><a class="text"> African Mission in Sudan</a></td><td> 2018-05-10T15</td></tr>
+                        <tr><td>7</td><td><a class="text"> AMISOM</a></td><td><a class="text"> African Mission in Somalia</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>8</td><td><a class="text"> AO</a></td><td><a class="text"> Area of Operations</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>9</td><td><a class="text"> AOB</a></td><td><a class="text"> Any Other Business</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>10</td><td><a class="text"> ASD</a></td><td><a class="text"> Administrative Support Division</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>11</td><td><a class="text"> ASG</a></td><td><a class="text"> Assistant Secretary General</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>12</td><td><a class="text"> ATO</a></td><td><a class="text"> Ammunition Technical Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>13</td><td><a class="text"> ATS</a></td><td><a class="text"> Air Transport Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>14</td><td><a class="text"> AU</a></td><td><a class="text"> African Union</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>15</td><td><a class="text"> AUPSOD</a></td><td><a class="text"> African Union Peace Support Operations Division</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>16</td><td><a class="text"> AUPST</a></td><td><a class="text"> African Union Peace Support Team</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>17</td><td><a class="text"> BES</a></td><td><a class="text"> Building and Engineering Services</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>18</td><td><a class="text"> BMS</a></td><td><a class="text"> Building Management Services</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>19</td><td><a class="text"> BN</a></td><td><a class="text"> Battalion</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>20</td><td><a class="text"> BOA</a></td><td><a class="text"> Board of Auditors</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>21</td><td><a class="text"> BOI</a></td><td><a class="text"> Board of Inquiry</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>22</td><td><a class="text"> BRSC</a></td><td><a class="text"> Brown & Root Services Corporation</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>23</td><td><a class="text"> C-34</a></td><td><a class="text"> United Nations Special Committee on Peacekeeping Operations</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>24</td><td><a class="text"> CAA</a></td><td><a class="text"> Civil Aviation Administration</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>25</td><td><a class="text"> CAO</a></td><td><a class="text"> Chief Administrative Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>26</td><td><a class="text"> CBMS</a></td><td><a class="text"> Chief Building Management Services</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>27</td><td><a class="text"> CC</a></td><td><a class="text"> Contributing Country</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>28</td><td><a class="text"> CCITS</a></td><td><a class="text"> Chief of Communications and Information Technology Service</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>29</td><td><a class="text"> CCLO</a></td><td><a class="text"> Chief Civilian Logistics Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>30</td><td><a class="text"> CCO</a></td><td><a class="text"> Chief Communications Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>31</td><td><a class="text"> CCPO</a></td><td><a class="text"> Chief Civilian Personnel Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>32</td><td><a class="text"> CDT</a></td><td><a class="text"> Conduct and Discipline Team</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>33</td><td><a class="text"> CESS</a></td><td><a class="text"> Chief Electronic Service Support</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>34</td><td><a class="text"> CFO</a></td><td><a class="text"> Chief Finance Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>35</td><td><a class="text"> Acronym</a></td><td><a class="text"> Description</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>36</td><td><a class="text"> CGSO</a></td><td><a class="text"> Chief General Services Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>37</td><td><a class="text"> CIMIC</a></td><td><a class="text"> Civil Military Coordination</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>38</td><td><a class="text"> CIMS</a></td><td><a class="text"> Claims and Information Management Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>39</td><td><a class="text"> CISS</a></td><td><a class="text"> Chief Integrated Support Services</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>40</td><td><a class="text"> CITS</a></td><td><a class="text"> Communications and Information Technology Service</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>41</td><td><a class="text"> CIVPOL</a></td><td><a class="text"> Civilian Police</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>42</td><td><a class="text"> CLO</a></td><td><a class="text"> Chief Logistics Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>43</td><td><a class="text"> CMMRB</a></td><td><a class="text"> COE MOU Management Review Board</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>44</td><td><a class="text"> CMO</a></td><td><a class="text"> Chief Military Observer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>45</td><td><a class="text"> CMOS</a></td><td><a class="text"> Current Military Operations Service</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>46</td><td><a class="text"> CMPO</a></td><td><a class="text"> Chief Military Personnel Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>47</td><td><a class="text"> CMS</a></td><td><a class="text"> Chief of Mission Support</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>48</td><td><a class="text"> CMU</a></td><td><a class="text"> Contracts Management Unit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>49</td><td><a class="text"> COB</a></td><td><a class="text"> Close of Business</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>50</td><td><a class="text"> COE</a></td><td><a class="text"> Contingent Owned Equipment</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>51</td><td><a class="text"> CONOPS</a></td><td><a class="text"> Concept of Operations</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>52</td><td><a class="text"> COO</a></td><td><a class="text"> Chief Operations Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>53</td><td><a class="text"> COS</a></td><td><a class="text"> Chief of Staff</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>54</td><td><a class="text"> COY</a></td><td><a class="text"> Company</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>55</td><td><a class="text"> CPM</a></td><td><a class="text"> COE and Property Management Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>56</td><td><a class="text"> CPO</a></td><td><a class="text"> Chief Procurement Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>57</td><td><a class="text"> CPS</a></td><td><a class="text"> Chief Procurement Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>58</td><td><a class="text"> CRM</a></td><td><a class="text"> Customer Relationship Management</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>59</td><td><a class="text"> CTO</a></td><td><a class="text"> Chief Transport Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>60</td><td><a class="text"> CTS</a></td><td><a class="text"> Chief Technical Support Services</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>61</td><td><a class="text"> CYEIR</a></td><td><a class="text"> Calendar Year End Inventory Report</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>62</td><td><a class="text"> DASD</a></td><td><a class="text"> Director of Administrative Support Division</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>63</td><td><a class="text"> DDA</a></td><td><a class="text"> Department for Disarmament Affairs</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>64</td><td><a class="text"> DDM</a></td><td><a class="text"> Date of Departure from Mission</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>65</td><td><a class="text"> DDR</a></td><td><a class="text"> Damage Discrepancy Report</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>66</td><td><a class="text"> DDRR</a></td><td><a class="text"> Disarmament Demobilization Reintegration and Rehabilitation</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>67</td><td><a class="text"> DESA</a></td><td><a class="text"> Department of Economic and Social Affairs</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>68</td><td><a class="text"> DFC</a></td><td><a class="text"> Deputy Force Commander</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>69</td><td><a class="text"> DFS</a></td><td><a class="text"> Department of Field Support</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>70</td><td><a class="text"> DGACM</a></td><td><a class="text"> Department of General Assembly and Conference Management</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>71</td><td><a class="text"> DLSD</a></td><td><a class="text"> Director of Logistics Support Division</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>72</td><td><a class="text"> DM</a></td><td><a class="text"> Department of Management</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>73</td><td><a class="text"> DMS</a></td><td><a class="text"> Director of Mission Support</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>74</td><td><a class="text"> DOA</a></td><td><a class="text"> Dead on Arrival</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>75</td><td><a class="text"> DOA</a></td><td><a class="text"> Director of Administration</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>76</td><td><a class="text"> DPA</a></td><td><a class="text"> Department of Political Affairs</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>77</td><td><a class="text"> IMC</a></td><td><a class="text"> Information Management Committee</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>78</td><td><a class="text"> IMIS</a></td><td><a class="text"> Integrated Management Information System</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>79</td><td><a class="text"> IMO</a></td><td><a class="text"> International Maritime Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>80</td><td><a class="text"> IMPP</a></td><td><a class="text"> Integrated Mission Planning Process</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>81</td><td><a class="text"> IMTC</a></td><td><a class="text"> Integrated Mission Training Centre</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>82</td><td><a class="text"> IMU</a></td><td><a class="text"> Information Management Unit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>83</td><td><a class="text"> INMARSAT</a></td><td><a class="text"> International Maritime Satellite Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>84</td><td><a class="text"> INTELSAT</a></td><td><a class="text"> International Telecommunications Satellite Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>85</td><td><a class="text"> IOC</a></td><td><a class="text"> Initial Operating Capability</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>86</td><td><a class="text"> IOR</a></td><td><a class="text"> Immediate Operational Requirement</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>87</td><td><a class="text"> IOT</a></td><td><a class="text"> Integrated Operational Teams</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>88</td><td><a class="text"> IOV</a></td><td><a class="text"> Inter-Office Voucher</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>89</td><td><a class="text"> IPSAS</a></td><td><a class="text"> International Public Sector Accounting Standards</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>90</td><td><a class="text"> IPST</a></td><td><a class="text"> Integrated Personnel Support Teams</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>91</td><td><a class="text"> ITAR</a></td><td><a class="text"> International Traffic in Arms Regulations</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>92</td><td><a class="text"> ITB</a></td><td><a class="text"> Invitation to Bid</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>93</td><td><a class="text"> JLOC</a></td><td><a class="text"> Joint Logistics Operations Centre</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>94</td><td><a class="text"> JOC</a></td><td><a class="text"> Joint Operations Centre</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>95</td><td><a class="text"> KPI</a></td><td><a class="text"> Key Performance Indicators</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>96</td><td><a class="text"> LA</a></td><td><a class="text"> Legal Adviser</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>97</td><td><a class="text"> LAN</a></td><td><a class="text"> Local Area Network</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>98</td><td><a class="text"> LCC</a></td><td><a class="text"> Local Committee on Contracts</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>99</td><td><a class="text"> LCS</a></td><td><a class="text"> Logistics and Communications Service</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>100</td><td><a class="text"> LOA</a></td><td><a class="text"> Letter of Assist</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>101</td><td><a class="text"> LOGOPS</a></td><td><a class="text"> Logistics Operations (Section)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>102</td><td><a class="text"> LOGREP</a></td><td><a class="text"> Logistics Report</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>103</td><td><a class="text"> LPG</a></td><td><a class="text"> Liquefied Petroleum Gasoline</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>104</td><td><a class="text"> LPSB</a></td><td><a class="text"> Local Property Survey Board</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>105</td><td><a class="text"> LPU</a></td><td><a class="text"> Logistics Planning Unit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>106</td><td><a class="text"> LRF</a></td><td><a class="text"> Laser Range Finder</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>107</td><td><a class="text"> LSD</a></td><td><a class="text"> Logistics Support Division</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>108</td><td><a class="text"> MCMS</a></td><td><a class="text"> MOU and Claims Management Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>109</td><td><a class="text"> MEDEVAC</a></td><td><a class="text"> Medical Evacuation</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>110</td><td><a class="text"> MHE</a></td><td><a class="text"> Material Handling Equipment</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>111</td><td><a class="text"> MILAD</a></td><td><a class="text"> Military Adviser</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>112</td><td><a class="text"> MILOBS</a></td><td><a class="text"> Military Observers</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>113</td><td><a class="text"> MIP</a></td><td><a class="text"> Mission Implementation Plan</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>114</td><td><a class="text"> MNF</a></td><td><a class="text"> Multi-National Forces</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>115</td><td><a class="text"> MOD</a></td><td><a class="text"> Miscellaneous Obligation Documents</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>116</td><td><a class="text"> MORSS</a></td><td><a class="text"> Minimum Operating Residential Security Standards</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>117</td><td><a class="text"> MOSS</a></td><td><a class="text"> Minimum Operating Security Standards</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>118</td><td><a class="text"> MOU</a></td><td><a class="text"> Memorandum of Understanding</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>119</td><td><a class="text"> MOVCON</a></td><td><a class="text"> Movement Control</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>120</td><td><a class="text"> MPO</a></td><td><a class="text"> Mission Planning Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>121</td><td><a class="text"> MRE</a></td><td><a class="text"> Meal Ready to Eat</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>122</td><td><a class="text"> MRO</a></td><td><a class="text"> Material Release Order</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>123</td><td><a class="text"> MRP</a></td><td><a class="text"> Material Resourcing Plan</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>124</td><td><a class="text"> MRR</a></td><td><a class="text"> Mission Readiness Report</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>125</td><td><a class="text"> MS</a></td><td><a class="text"> Member State</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>126</td><td><a class="text"> MSA</a></td><td><a class="text"> Mission Subsistence Allowance</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>127</td><td><a class="text"> MSDFP</a></td><td><a class="text"> Mission Support Draft Framework Plan</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>128</td><td><a class="text"> MSM</a></td><td><a class="text"> Medical Support Manual</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>129</td><td><a class="text"> MSP</a></td><td><a class="text"> Motor Spirit Premium</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>130</td><td><a class="text"> MSR</a></td><td><a class="text"> Main Supply Route</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>131</td><td><a class="text"> MSU</a></td><td><a class="text"> Medical Support Unit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>132</td><td><a class="text"> NCD</a></td><td><a class="text"> Number of Calendar Days</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>133</td><td><a class="text"> NCE</a></td><td><a class="text"> National Command Element</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>134</td><td><a class="text"> NCO</a></td><td><a class="text"> Non-Commissioned Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>135</td><td><a class="text"> NGO</a></td><td><a class="text"> Non-Governmental Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>136</td><td><a class="text"> NODEFIC</a></td><td><a class="text"> Norwegian Defense International Centre</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>137</td><td><a class="text"> NOTICAS</a></td><td><a class="text"> Notification of Casualty</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>138</td><td><a class="text"> NSE</a></td><td><a class="text"> National Support Element</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>139</td><td><a class="text"> NTE</a></td><td><a class="text"> Not to Exceed</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>140</td><td><a class="text"> NV</a></td><td><a class="text"> Note Verbale</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>141</td><td><a class="text"> NVD</a></td><td><a class="text"> Night Vision Device</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>142</td><td><a class="text"> NVDO</a></td><td><a class="text"> Night Vision Device for Observation</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>143</td><td><a class="text"> NVG</a></td><td><a class="text"> Night Vision Goggles</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>144</td><td><a class="text"> OHC</a></td><td><a class="text"> Office of the Humanitarian Coordinator</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>145</td><td><a class="text"> OHCHR</a></td><td><a class="text"> Office of the High Commissioner for Human Rights</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>146</td><td><a class="text"> OHRM</a></td><td><a class="text"> Office of Human Resources Management</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>147</td><td><a class="text"> OHS</a></td><td><a class="text"> Occupational Health and Safety</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>148</td><td><a class="text"> OIC</a></td><td><a class="text"> Officer-in-Charge</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>149</td><td><a class="text"> OIOS</a></td><td><a class="text"> Office of Internal Oversight Services</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>150</td><td><a class="text"> OLA</a></td><td><a class="text"> Office of Legal Affairs</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>151</td><td><a class="text"> OLA</a></td><td><a class="text"> Operating Level Agreement</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>152</td><td><a class="text"> OMS</a></td><td><a class="text"> Office of Mission Support</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>153</td><td><a class="text"> OPPBA</a></td><td><a class="text"> Office of Programme Planning Budget and Administration</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>154</td><td><a class="text"> ORB</a></td><td><a class="text"> Operation Recuperation Break</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>155</td><td><a class="text"> ORI</a></td><td><a class="text"> Operational Readiness Inspection</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>156</td><td><a class="text"> OSM</a></td><td><a class="text"> Operation Support Manual</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>157</td><td><a class="text"> OTH</a></td><td><a class="text"> Over the Horizon (capability)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>158</td><td><a class="text"> P</a></td><td><a class="text"> Professional Staff</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>159</td><td><a class="text"> P-11</a></td><td><a class="text"> United Nations Personal History Form</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>160</td><td><a class="text"> PABX</a></td><td><a class="text"> Private Automatic Branch Exchange</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>161</td><td><a class="text"> PADP</a></td><td><a class="text"> Preliminary Asset Disposal Plan</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>162</td><td><a class="text"> PC</a></td><td><a class="text"> Police Contributor</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>163</td><td><a class="text"> PCC</a></td><td><a class="text"> Police Contributing Country</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>164</td><td><a class="text"> PCIU</a></td><td><a class="text"> Property Control and Inventory Unit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>165</td><td><a class="text"> PD</a></td><td><a class="text"> Procurement Division</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>166</td><td><a class="text"> PDU</a></td><td><a class="text"> Property Disposal Unit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>167</td><td><a class="text"> PDV</a></td><td><a class="text"> Pre Deployment Visit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>168</td><td><a class="text"> PHP</a></td><td><a class="text"> Personal History Profile</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>169</td><td><a class="text"> PIO</a></td><td><a class="text"> Public Information Office</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>170</td><td><a class="text"> PMSS</a></td><td><a class="text"> Personnel Management and Support Services</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>171</td><td><a class="text"> PMU</a></td><td><a class="text"> Property Management Unit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>172</td><td><a class="text"> PO</a></td><td><a class="text"> Purchase Order</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>173</td><td><a class="text"> POC</a></td><td><a class="text"> Point of Contact</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>174</td><td><a class="text"> POL</a></td><td><a class="text"> Petroleum Oil and Lubricants</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>175</td><td><a class="text"> POLAD</a></td><td><a class="text"> Police Advisor</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>176</td><td><a class="text"> PSB</a></td><td><a class="text"> Property Survey Board</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>177</td><td><a class="text"> RAO</a></td><td><a class="text"> Regional Administrative Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>178</td><td><a class="text"> RBB</a></td><td><a class="text"> Results Based Budgeting</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>179</td><td><a class="text"> RCDS</a></td><td><a class="text"> Recruitment and Career Development Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>180</td><td><a class="text"> RCHQ</a></td><td><a class="text"> Redeployment Coordination Headquarters Company</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>181</td><td><a class="text"> RDL</a></td><td><a class="text"> Rapid Deployment Level</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>182</td><td><a class="text"> Res.</a></td><td><a class="text"> Rep. Resident Representative</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>183</td><td><a class="text"> RFP</a></td><td><a class="text"> Request for Proposal</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>184</td><td><a class="text"> RHQ</a></td><td><a class="text"> Regional Headquarters</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>185</td><td><a class="text"> R&I</a></td><td><a class="text"> Receiving and Inspection</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>186</td><td><a class="text"> RIV</a></td><td><a class="text"> Rapid Intervention Vehicle</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>187</td><td><a class="text"> ROR</a></td><td><a class="text"> Review of Rates</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>188</td><td><a class="text"> ROU</a></td><td><a class="text"> Recruitment and Outreach</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>189</td><td><a class="text"> ROWPU</a></td><td><a class="text"> Reverse Osmosis Water Purification Unit (aka ROPU)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>190</td><td><a class="text"> RPG</a></td><td><a class="text"> Rocket Propelled Grenade</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>191</td><td><a class="text"> SAO</a></td><td><a class="text"> Senior Administrative Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>192</td><td><a class="text"> SAR</a></td><td><a class="text"> Search & Rescue</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>193</td><td><a class="text"> SASE</a></td><td><a class="text"> Safe and Secure Environment</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>194</td><td><a class="text"> SAU</a></td><td><a class="text"> Self Accounting Unit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>195</td><td><a class="text"> SC</a></td><td><a class="text"> Security Council</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>196</td><td><a class="text"> SDS</a></td><td><a class="text"> Strategic Deployment Stocks</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>197</td><td><a class="text"> SEA</a></td><td><a class="text"> Sexual Exploitation and Abuse</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>198</td><td><a class="text"> SG</a></td><td><a class="text"> Secretary-General</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>199</td><td><a class="text"> SHIRBRIG</a></td><td><a class="text"> Standby High Readiness Brigade (for United Nations Operations)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>200</td><td><a class="text"> SIA</a></td><td><a class="text"> Special Iraq Allowance</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>201</td><td><a class="text"> SITREP</a></td><td><a class="text"> Situation Report</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>202</td><td><a class="text"> SLA</a></td><td><a class="text"> Service Level Agreement</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>203</td><td><a class="text"> SMC</a></td><td><a class="text"> Strategic Military Cell</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>204</td><td><a class="text"> SMT</a></td><td><a class="text"> Senior Management Team / Security Management Team</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>205</td><td><a class="text"> SO</a></td><td><a class="text"> Staff Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>206</td><td><a class="text"> SOFA</a></td><td><a class="text"> Status-of-Forces Agreement</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>207</td><td><a class="text"> SOMA</a></td><td><a class="text"> Status-of-Mission Agreement</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>208</td><td><a class="text"> SOP</a></td><td><a class="text"> Standard Operating Procedures</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>209</td><td><a class="text"> SOR</a></td><td><a class="text"> Statement of Requirements</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>210</td><td><a class="text"> SOW</a></td><td><a class="text"> Scope/Statement of Works</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>211</td><td><a class="text"> SPOD</a></td><td><a class="text"> Special Police Operations Detachment</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>212</td><td><a class="text"> SRSG</a></td><td><a class="text"> Special Representative of the Secretary-General</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>213</td><td><a class="text"> SSS</a></td><td><a class="text"> Specialist Support Services</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>214</td><td><a class="text"> STC</a></td><td><a class="text"> Standard Troop Costs</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>215</td><td><a class="text"> STS</a></td><td><a class="text"> Surface Transport Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>216</td><td><a class="text"> STU</a></td><td><a class="text"> Surface Transport Unit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>217</td><td><a class="text"> TAM</a></td><td><a class="text"> Technical Assessment Mission (Report)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>218</td><td><a class="text"> TBC</a></td><td><a class="text"> To be confirmed</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>219</td><td><a class="text"> TBD</a></td><td><a class="text"> To be determined</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>220</td><td><a class="text"> TC</a></td><td><a class="text"> Technical Clearance</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>221</td><td><a class="text"> TCC</a></td><td><a class="text"> Troop Contributing Country</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>222</td><td><a class="text"> TCN</a></td><td><a class="text"> Troop Contributing Nation</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>223</td><td><a class="text"> TDY</a></td><td><a class="text"> Temporary Duty</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>224</td><td><a class="text"> TOD</a></td><td><a class="text"> Tour of Duty</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>225</td><td><a class="text"> TSAR</a></td><td><a class="text"> Troop Strength Analysis Report</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>226</td><td><a class="text"> ULP</a></td><td><a class="text"> Un-Leaded Petrol</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>227</td><td><a class="text"> UNC</a></td><td><a class="text"> United Nations Command</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>228</td><td><a class="text"> UNHQ</a></td><td><a class="text"> United Nations Headquarters</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>229</td><td><a class="text"> UNJLC</a></td><td><a class="text"> United Nations Joint Logistics Centre</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>230</td><td><a class="text"> UNMO</a></td><td><a class="text"> United Nations Military Officer</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>231</td><td><a class="text"> UNOE</a></td><td><a class="text"> United Nations Owned Equipment</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>232</td><td><a class="text"> UNOG</a></td><td><a class="text"> United Nations Office in Geneva</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>233</td><td><a class="text"> UNSAS</a></td><td><a class="text"> United Nations Stand-by Arrangements System</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>234</td><td><a class="text"> UNSCO</a></td><td><a class="text"> Office of the United Nations Special Coordinator for the Middle East Process</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>235</td><td><a class="text"> UNSCOM</a></td><td><a class="text"> United Nations Special Commission</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>236</td><td><a class="text"> UNSMS</a></td><td><a class="text"> United Nations Security Management System</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>237</td><td><a class="text"> UNTAT</a></td><td><a class="text"> United Nations Training Assistance Teams</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>238</td><td><a class="text"> UPS</a></td><td><a class="text"> Uninterruptible Power Supply</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>239</td><td><a class="text"> USG</a></td><td><a class="text"> Under-Secretary-General</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>240</td><td><a class="text"> USG</a></td><td><a class="text"> United States Government</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>241</td><td><a class="text"> V-Eng</a></td><td><a class="text"> Coy Vertical Engineering Company</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>242</td><td><a class="text"> VIN</a></td><td><a class="text"> Vehicle Identification Number</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>243</td><td><a class="text"> VR</a></td><td><a class="text"> Verification Report</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>244</td><td><a class="text"> VSAT</a></td><td><a class="text"> Very Small Aperture Terminal</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>245</td><td><a class="text"> VTC</a></td><td><a class="text"> Video Tele Conference</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>246</td><td><a class="text"> WB</a></td><td><a class="text"> World Bank</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>247</td><td><a class="text"> WFP</a></td><td><a class="text"> World Food Programme</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>248</td><td><a class="text"> WG</a></td><td><a class="text"> Working Group</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>249</td><td><a class="text"> WHO</a></td><td><a class="text"> World Health Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>250</td><td><a class="text"> WLR</a></td><td><a class="text"> Weapons Locating Radar</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>251</td><td><a class="text"> WOR</a></td><td><a class="text"> Work Order Request</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>252</td><td><a class="text"> WOV</a></td><td><a class="text"> Write-off Voucher</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>253</td><td><a class="text"> WTP</a></td><td><a class="text"> Water Treatment Plant</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>254</td><td><a class="text"> XP</a></td><td><a class="text"> Crossing Point</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>255</td><td><a class="text"> ADB</a></td><td><a class="text"> Asian Development Bank</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>256</td><td><a class="text"> AfDB</a></td><td><a class="text"> African Development Bank</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>257</td><td><a class="text"> AFISMA</a></td><td><a class="text"> African-led International Support Mission in Mali (replaced by MINUSMA)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>258</td><td><a class="text"> a.i.</a></td><td><a class="text"> ad interim; not usually written out</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>259</td><td><a class="text"> AIDS</a></td><td><a class="text"> acquired immunodeficiency syndrome; not usually written out</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>260</td><td><a class="text"> AMIB</a></td><td><a class="text"> African Mission in Burundi</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>261</td><td><a class="text"> APEC</a></td><td><a class="text"> Asia-Pacific Economic Cooperation</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>262</td><td><a class="text"> ASEAN</a></td><td><a class="text"> Association of Southeast Asian Nations</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>263</td><td><a class="text"> BCG    </a></td><td><a class="text"> bacillus Calmette-Guérin (tuberculosis vaccine); never written out</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>264</td><td><a class="text"> BINUB</a></td><td><a class="text"> United Nations Integrated Office in Burundi (replaced by BNUB)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>265</td><td><a class="text"> BINUCA</a></td><td><a class="text"> United Nations Integrated Peacebuilding Office in the Central African Republic</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>266</td><td><a class="text"> BNUB</a></td><td><a class="text"> United Nations Office in Burundi</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>267</td><td><a class="text"> BONUCA</a></td><td><a class="text"> United Nations Peacebuilding Support Office in the Central African Republic (replaced by BINUCA)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>268</td><td><a class="text"> CARICOM</a></td><td><a class="text"> Caribbean Community</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>269</td><td><a class="text"> CCISUA</a></td><td><a class="text">               Coordinating Committee for International Staff Unions and Associations of the United Nations System</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>270</td><td><a class="text"> CEB</a></td><td><a class="text">                      United Nations System Chief Executives Board for Coordination</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>271</td><td><a class="text"> CELAC</a></td><td><a class="text"> Community of Latin American and Caribbean States</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>272</td><td><a class="text"> CELADE</a></td><td><a class="text">       Latin American and Caribbean Demographic Centre [Centro Latinoamericano y Caribeño de Demografía]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>273</td><td><a class="text"> CEMAC</a></td><td><a class="text"> Central African Economic and Monetary Community [Communauté économique et monétaire de l’Afrique centrale]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>274</td><td><a class="text"> CEN-SAD</a></td><td><a class="text">          Community of Sahelo-Saharan States</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>275</td><td><a class="text"> CEPGL</a></td><td><a class="text">              Economic Community of the Great Lakes Countries [Communauté économique des pays des Grands Lacs]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>276</td><td><a class="text"> CFA</a></td><td><a class="text">                   Communauté financière africaine; not usually written out</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>277</td><td><a class="text"> CFC(s)      </a></td><td><a class="text">          chlorofluorocarbon(s)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>278</td><td><a class="text"> CILSS</a></td><td><a class="text"> Permanent Inter-State Committee on Drought Control in the Sahel [Comité permanent inter-États de lutte contre la sécheresse dans le Sahel]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>279</td><td><a class="text"> CIS</a></td><td><a class="text">                        Commonwealth of Independent States</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>280</td><td><a class="text"> CNDD-FDD</a></td><td><a class="text">      Conseil national pour la défense de la démocratie-Forces pour la défense de la démocratie [Burundi]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>281</td><td><a class="text"> COMESA</a></td><td><a class="text">          Common Market for Eastern and Southern Africa</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>282</td><td><a class="text"> CPI                     </a></td><td><a class="text"> consumer price index</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>283</td><td><a class="text"> DNA</a></td><td><a class="text"> deoxyribonucleic acid; never written out</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>284</td><td><a class="text"> EBRD</a></td><td><a class="text"> European Bank for Reconstruction and Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>285</td><td><a class="text"> ECA</a></td><td><a class="text"> Economic Commission for Africa</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>286</td><td><a class="text"> ECCAS</a></td><td><a class="text"> Economic Community of Central African States</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>287</td><td><a class="text"> ECE</a></td><td><a class="text"> Economic Commission for Europe</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>288</td><td><a class="text"> ECLAC</a></td><td><a class="text"> Economic Commission for Latin America and the Caribbean</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>289</td><td><a class="text"> ECOMOG</a></td><td><a class="text"> Economic Community of West African States Monitoring Group</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>290</td><td><a class="text"> ECOWAS</a></td><td><a class="text"> Economic Community of West African States</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>291</td><td><a class="text"> EEZ</a></td><td><a class="text"> exclusive economic zone</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>292</td><td><a class="text"> EFTA</a></td><td><a class="text"> European Free Trade Association</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>293</td><td><a class="text"> ESCAP</a></td><td><a class="text"> Economic and Social Commission for Asia and the Pacific</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>294</td><td><a class="text"> ESCWA</a></td><td><a class="text"> Economic and Social Commission for Western Asia</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>295</td><td><a class="text"> EUFOR</a></td><td><a class="text"> European Union military mission in Bosnia and Herzegovina</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>296</td><td><a class="text"> Europol</a></td><td><a class="text">   European Union Agency for Law Enforcement Cooperation</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>297</td><td><a class="text"> Eurostat</a></td><td><a class="text"> European Union statistical office; never written out</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>298</td><td><a class="text"> FANCI</a></td><td><a class="text"> Forces armées nationales de Côte d'Ivoire</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>299</td><td><a class="text"> FAO</a></td><td><a class="text">                   Food and Agriculture Organization of the United Nations</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>300</td><td><a class="text"> FDI</a></td><td><a class="text">                    foreign direct investment</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>301</td><td><a class="text"> FICSA    </a></td><td><a class="text"> Federation of International Civil Servants’ Associations</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>302</td><td><a class="text"> FNL</a></td><td><a class="text">                   Forces nationales de libération [Burundi]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>303</td><td><a class="text"> Frente</a></td><td><a class="text"> PolisarioFrente Popular para la Liberación de Saguía el-Hamra y de Río de Oro [Western Sahara]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>304</td><td><a class="text"> GDP</a></td><td><a class="text"> gross domestic product</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>305</td><td><a class="text"> GEF</a></td><td><a class="text"> Global Environment Facility</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>306</td><td><a class="text"> GIS</a></td><td><a class="text"> geographic information system</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>307</td><td><a class="text"> GNP</a></td><td><a class="text"> gross national product</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>308</td><td><a class="text"> GPS</a></td><td><a class="text"> Global Positioning System</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>309</td><td><a class="text"> GSP</a></td><td><a class="text"> Generalized System of Preferences</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>310</td><td><a class="text"> HIV</a></td><td><a class="text"> human immunodeficiency virus; not usually written out</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>311</td><td><a class="text"> IADB</a></td><td><a class="text"> Inter-American Development Bank</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>312</td><td><a class="text"> IAEA</a></td><td><a class="text"> International Atomic Energy Agency</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>313</td><td><a class="text"> IBRD</a></td><td><a class="text"> International Bank for Reconstruction and Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>314</td><td><a class="text"> ICAO</a></td><td><a class="text"> International Civil Aviation Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>315</td><td><a class="text"> ICFTU</a></td><td><a class="text"> International Confederation of Free Trade Unions</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>316</td><td><a class="text"> ICRC</a></td><td><a class="text"> International Committee of the Red Cross</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>317</td><td><a class="text"> ICSC</a></td><td><a class="text"> International Civil Service Commission</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>318</td><td><a class="text"> ICSU</a></td><td><a class="text"> International Council for Science [formerly International Council of Scientific Unions]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>319</td><td><a class="text"> ICT</a></td><td><a class="text"> information and communications technology</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>320</td><td><a class="text"> IDA</a></td><td><a class="text"> International Development Association</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>321</td><td><a class="text"> IDB</a></td><td><a class="text"> Islamic Development Bank  </a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>322</td><td><a class="text"> IFAD</a></td><td><a class="text"> International Fund for Agricultural Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>323</td><td><a class="text"> IFC</a></td><td><a class="text"> International Finance Corporation</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>324</td><td><a class="text"> IGAD</a></td><td><a class="text"> Intergovernmental Authority on Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>325</td><td><a class="text"> ILO</a></td><td><a class="text"> International Labour Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>326</td><td><a class="text"> IMF</a></td><td><a class="text"> International Monetary Fund</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>327</td><td><a class="text"> Infoterra</a></td><td><a class="text"> Global Environmental Information Exchange Network [UNEP]; not usually written out</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>328</td><td><a class="text"> INSTRAW</a></td><td><a class="text"> International Research and Training Institute for the Advancement of Women [transferred to UN-Women]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>329</td><td><a class="text"> INTERPOL</a></td><td><a class="text"> International Criminal Police Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>330</td><td><a class="text"> IOM</a></td><td><a class="text"> International Organization for Migration</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>331</td><td><a class="text"> IP</a></td><td><a class="text"> Internet Protocol; not usually written out</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>332</td><td><a class="text"> IPU</a></td><td><a class="text"> Inter-Parliamentary Union</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>333</td><td><a class="text"> IRMCT</a></td><td><a class="text"> International Residual Mechanism for Criminal Tribunals</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>334</td><td><a class="text"> ISAF</a></td><td><a class="text"> International Security Assistance Force [Afghanistan]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>335</td><td><a class="text"> ITC</a></td><td><a class="text"> International Trade Centre</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>336</td><td><a class="text"> ITU</a></td><td><a class="text"> International Telecommunication Union</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>337</td><td><a class="text"> JEM</a></td><td><a class="text"> Justice and Equality Movement [Sudan]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>338</td><td><a class="text"> JVA</a></td><td><a class="text"> Juba Valley Alliance [Somalia]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>339</td><td><a class="text"> KFOR</a></td><td><a class="text"> Kosovo Force</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>340</td><td><a class="text"> LAS</a></td><td><a class="text"> League of Arab States</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>341</td><td><a class="text"> LRA</a></td><td><a class="text"> Lord’s Resistance Army [Uganda]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>342</td><td><a class="text"> LURD</a></td><td><a class="text"> Liberians United for Reconciliation and Democracy</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>343</td><td><a class="text"> MENUB</a></td><td><a class="text"> United Nations Electoral Observer Mission in Burundi</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>344</td><td><a class="text"> MERCOSUR</a></td><td><a class="text"> Southern Common Market [Mercado Común del Sur]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>345</td><td><a class="text"> MINUJUSTH</a></td><td><a class="text"> United Nations Mission for Justice Support in Haiti</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>346</td><td><a class="text"> MINURCAT</a></td><td><a class="text"> United Nations Mission in the Central African Republic and Chad</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>347</td><td><a class="text"> MINURSO</a></td><td><a class="text"> United Nations Mission for the Referendum in Western Sahara</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>348</td><td><a class="text"> MINUSCA</a></td><td><a class="text"> United Nations Multidimensional Integrated Stabilization Mission in the Central African Republic</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>349</td><td><a class="text"> MINUSMA</a></td><td><a class="text"> United Nations Multidimensional Integrated Stabilization Mission in Mali</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>350</td><td><a class="text"> MINUSTAH</a></td><td><a class="text"> United Nations Stabilization Mission in Haiti (replaced by MINUJUSTH)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>351</td><td><a class="text"> MISAB</a></td><td><a class="text"> Inter-African Mission to Monitor the Implementation of the Bangui Agreements [Central African Republic]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>352</td><td><a class="text"> MODEL</a></td><td><a class="text"> Movement for Democracy in Liberia</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>353</td><td><a class="text"> MONUC</a></td><td><a class="text"> United Nations Organization Mission in the Democratic Republic of the Congo (replaced by MONUSCO)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>354</td><td><a class="text"> MONUSCO</a></td><td><a class="text"> United Nations Organization Stabilization Mission in the Democratic Republic of the Congo</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>355</td><td><a class="text"> NATO</a></td><td><a class="text"> North Atlantic Treaty Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>356</td><td><a class="text"> NEPAD</a></td><td><a class="text"> New Partnership for Africa's Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>357</td><td><a class="text"> OAS</a></td><td><a class="text"> Organization of American States</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>358</td><td><a class="text"> OAU</a></td><td><a class="text"> Organization of African Unity (now African Union)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>359</td><td><a class="text"> ODA</a></td><td><a class="text"> official development assistance</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>360</td><td><a class="text"> ODS</a></td><td><a class="text"> Official Document System</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>361</td><td><a class="text"> OECD</a></td><td><a class="text"> Organization for Economic Cooperation and Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>362</td><td><a class="text"> OECS</a></td><td><a class="text"> Organisation of Eastern Caribbean States</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>363</td><td><a class="text"> OIC</a></td><td><a class="text"> Organization of Islamic Cooperation (formerly Organization of the Islamic Conference)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>364</td><td><a class="text"> OIF</a></td><td><a class="text"> International Organization of la Francophonie</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>365</td><td><a class="text"> ONUB</a></td><td><a class="text"> United Nations Operation in Burundi</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>366</td><td><a class="text"> OPCW</a></td><td><a class="text"> Organisation for the Prohibition of Chemical Weapons</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>367</td><td><a class="text"> OPEC</a></td><td><a class="text"> Organization of the Petroleum Exporting Countries</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>368</td><td><a class="text"> OSCE</a></td><td><a class="text"> Organization for Security and Cooperation in Europe</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>369</td><td><a class="text"> PAHO</a></td><td><a class="text"> Pan American Health Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>370</td><td><a class="text"> Palipehutu</a></td><td><a class="text"> Parti pour la libération du peuple hutu [Burundi]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>371</td><td><a class="text"> PLO</a></td><td><a class="text"> Palestine Liberation Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>372</td><td><a class="text"> Polisario</a></td><td><a class="text"> see Frente Polisario</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>373</td><td><a class="text"> ppp</a></td><td><a class="text"> purchasing power parity</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>374</td><td><a class="text"> RNA</a></td><td><a class="text"> ribonucleic acid; never written out</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>375</td><td><a class="text"> RRA</a></td><td><a class="text"> Rahanwein Resistance Army [Somalia]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>376</td><td><a class="text"> RUF</a></td><td><a class="text"> Revolutionary United Front [Sierra Leone]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>377</td><td><a class="text"> RUFP</a></td><td><a class="text"> Revolutionary United Front Party [Sierra Leone]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>378</td><td><a class="text"> SAARC</a></td><td><a class="text"> South Asian Association for Regional Cooperation</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>379</td><td><a class="text"> SADC</a></td><td><a class="text"> Southern African Development Community</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>380</td><td><a class="text"> SAR</a></td><td><a class="text"> Special Administrative Region of China (Hong Kong SAR; Macao SAR)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>381</td><td><a class="text"> SARS</a></td><td><a class="text"> severe acute respiratory syndrome</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>382</td><td><a class="text"> SDR(s)</a></td><td><a class="text"> special drawing right(s) [IMF]; SDR 12 million</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>383</td><td><a class="text"> SELA</a></td><td><a class="text"> Latin American Economic System [Sistema Económico Latinoamericano]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>384</td><td><a class="text"> SFOR</a></td><td><a class="text"> Stabilization Force [Bosnia and Herzegovina]; replaced by EUFOR from December 2004</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>385</td><td><a class="text"> SLM/A</a></td><td><a class="text"> Sudan Liberation Movement/Army [Darfur]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>386</td><td><a class="text"> SPLM/A</a></td><td><a class="text"> Sudan People’s Liberation Movement/Army</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>387</td><td><a class="text"> TNT</a></td><td><a class="text"> trinitrotoluene; not usually written out</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>388</td><td><a class="text"> TRIPS</a></td><td><a class="text"> trade-related intellectual property rights</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>389</td><td><a class="text"> UHF</a></td><td><a class="text"> ultra-high frequency; not usually written out</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>390</td><td><a class="text"> UNAIDS</a></td><td><a class="text"> Joint United Nations Programme on HIV/AIDS</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>391</td><td><a class="text"> UNAMA</a></td><td><a class="text"> United Nations Assistance Mission in Afghanistan</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>392</td><td><a class="text"> UNAMI</a></td><td><a class="text"> United Nations Assistance Mission for Iraq</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>393</td><td><a class="text"> UNAMID</a></td><td><a class="text"> African Union-United Nations Hybrid Operation in Darfur</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>394</td><td><a class="text"> UNCITRAL</a></td><td><a class="text"> United Nations Commission on International Trade Law</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>395</td><td><a class="text"> UNCTAD</a></td><td><a class="text"> United Nations Conference on Trade and Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>396</td><td><a class="text"> UNDOF</a></td><td><a class="text"> United Nations Disengagement Observer Force [Golan Heights]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>397</td><td><a class="text"> UNDP</a></td><td><a class="text"> United Nations Development Programme</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>398</td><td><a class="text"> UNEP</a></td><td><a class="text"> United Nations Environment Programme</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>399</td><td><a class="text"> UNESCO</a></td><td><a class="text"> United Nations Educational Scientific and Cultural Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>400</td><td><a class="text"> UNFICYP</a></td><td><a class="text"> United Nations Peacekeeping Force in Cyprus</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>401</td><td><a class="text"> UNFIP</a></td><td><a class="text"> United Nations Fund for International Partnerships</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>402</td><td><a class="text"> UNFPA</a></td><td><a class="text"> United Nations Population Fund</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>403</td><td><a class="text"> UN-Habitat</a></td><td><a class="text"> United Nations Human Settlements Programme</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>404</td><td><a class="text"> UNHCR</a></td><td><a class="text"> Office of the United Nations High Commissioner for Refugees            </a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>405</td><td><a class="text"> UNICEF</a></td><td><a class="text"> United Nations Children’s Fund</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>406</td><td><a class="text"> UNIDIR</a></td><td><a class="text"> United Nations Institute for Disarmament Research</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>407</td><td><a class="text"> UNIDO</a></td><td><a class="text"> United Nations Industrial Development Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>408</td><td><a class="text"> UNIFEM</a></td><td><a class="text"> United Nations Development Fund for Women [transferred to UN-Women]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>409</td><td><a class="text"> UNIFIL</a></td><td><a class="text"> United Nations Interim Force in Lebanon</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>410</td><td><a class="text"> UNIKOM</a></td><td><a class="text"> United Nations Iraq-Kuwait Observation Mission        </a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>411</td><td><a class="text"> UNIOGBIS</a></td><td><a class="text"> United Nations Integrated Peacebuilding Office in Guinea-Bissau</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>412</td><td><a class="text"> UNIPSIL</a></td><td><a class="text"> United Nations Integrated Peacebuilding Office in Sierra Leone</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>413</td><td><a class="text"> UNISFA</a></td><td><a class="text"> United Nations Interim Security Force for Abyei</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>414</td><td><a class="text"> UNITA</a></td><td><a class="text"> União Nacional para a Independência Total de Angola</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>415</td><td><a class="text"> UNITAR</a></td><td><a class="text"> United Nations Institute for Training and Research</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>416</td><td><a class="text"> UNMEE</a></td><td><a class="text"> United Nations Mission in Ethiopia and Eritrea</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>417</td><td><a class="text"> UNMEER</a></td><td><a class="text"> United Nations Mission for Ebola Emergency Response</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>418</td><td><a class="text"> UNMIBH</a></td><td><a class="text"> United Nations Mission in Bosnia and Herzegovina</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>419</td><td><a class="text"> UNMIK</a></td><td><a class="text"> United Nations Interim Administration Mission in Kosovo</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>420</td><td><a class="text"> UNMIL</a></td><td><a class="text"> United Nations Mission in Liberia</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>421</td><td><a class="text"> UNMIN</a></td><td><a class="text"> United Nations Mission in Nepal</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>422</td><td><a class="text"> UNMIS</a></td><td><a class="text"> United Nations Mission in the Sudan</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>423</td><td><a class="text"> UNMISS</a></td><td><a class="text"> United Nations Mission in South Sudan</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>424</td><td><a class="text"> UNMIT</a></td><td><a class="text"> United Nations Integrated Mission in Timor-Leste</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>425</td><td><a class="text"> UNMOGIP</a></td><td><a class="text"> United Nations Military Observer Group in India and Pakistan            </a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>426</td><td><a class="text"> UNMOVIC</a></td><td><a class="text"> United Nations Monitoring Verification and Inspection Commission [Iraq]</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>427</td><td><a class="text"> UNOCA</a></td><td><a class="text"> United Nations Regional Office for Central Africa</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>428</td><td><a class="text"> UNOCI</a></td><td><a class="text"> United Nations Operation in Côte d'Ivoire</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>429</td><td><a class="text"> UNODC</a></td><td><a class="text"> United Nations Office on Drugs and Crime</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>430</td><td><a class="text"> UNOGBIS</a></td><td><a class="text"> United Nations Peacebuilding Support Office in Guinea-Bissau (replaced by UNIOGBIS)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>431</td><td><a class="text"> UNOL</a></td><td><a class="text"> United Nations Peacebuilding Support Office in Liberia</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>432</td><td><a class="text"> UNOMIG</a></td><td><a class="text"> United Nations Observer Mission in Georgia</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>433</td><td><a class="text"> UNOPS</a></td><td><a class="text"> United Nations Office for Project Services</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>434</td><td><a class="text"> UNOWA</a></td><td><a class="text"> United Nations Office for West Africa (replaced by UNOWAS)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>435</td><td><a class="text"> UNOWAS</a></td><td><a class="text"> United Nations Office for West Africa and the Sahel</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>436</td><td><a class="text"> UNPOS</a></td><td><a class="text"> United Nations Political Office for Somalia (replaced by UNSOM)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>437</td><td><a class="text"> UNRISD</a></td><td><a class="text"> United Nations Research Institute for Social Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>438</td><td><a class="text"> UNRWA</a></td><td><a class="text"> United Nations Relief and Works Agency for Palestine Refugees in the Near East</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>439</td><td><a class="text"> UNSMIL</a></td><td><a class="text"> United Nations Support Mission in Libya</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>440</td><td><a class="text"> UNSMIS</a></td><td><a class="text"> United Nations Supervision Mission in the Syrian Arab Republic</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>441</td><td><a class="text"> UNSOA</a></td><td><a class="text"> United Nations Support Office for the African Union Mission in Somalia (replaced by UNSOS)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>442</td><td><a class="text"> UNSOM</a></td><td><a class="text"> United Nations Assistance Mission in Somalia</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>443</td><td><a class="text"> UNSOS</a></td><td><a class="text"> United Nations Support Office in Somalia</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>444</td><td><a class="text"> UNTOP</a></td><td><a class="text"> United Nations Tajikistan Office of Peacebuilding</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>445</td><td><a class="text"> UNTSO</a></td><td><a class="text"> United Nations Truce Supervision Organization [Middle East]         </a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>446</td><td><a class="text"> UNU</a></td><td><a class="text"> United Nations University</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>447</td><td><a class="text"> UNV</a></td><td><a class="text"> United Nations Volunteers programme</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>448</td><td><a class="text"> UN-Women</a></td><td><a class="text"> United Nations Entity for Gender Equality and the Empowerment of Women</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>449</td><td><a class="text"> UNWTO</a></td><td><a class="text"> World Tourism Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>450</td><td><a class="text"> UPU</a></td><td><a class="text"> Universal Postal Union</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>451</td><td><a class="text"> UT</a></td><td><a class="text"> UTCUniversal Time Universal Time Coordinated; not usually written out</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>452</td><td><a class="text"> VAT</a></td><td><a class="text"> value added tax</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>453</td><td><a class="text"> VHF</a></td><td><a class="text"> very high frequency; not usually written out</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>454</td><td><a class="text"> WAEMU</a></td><td><a class="text"> West African Economic and Monetary Union</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>455</td><td><a class="text"> WIDER</a></td><td><a class="text"> World Institute for Development Economics Research</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>456</td><td><a class="text"> WIPO</a></td><td><a class="text"> World Intellectual Property Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>457</td><td><a class="text"> WMO</a></td><td><a class="text"> World Meteorological Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>458</td><td><a class="text"> WTO</a></td><td><a class="text"> World Trade Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>459</td><td><a class="text"> AEDP</a></td><td><a class="text"> Alternative Energy Development Plan</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>460</td><td><a class="text"> ALPS</a></td><td><a class="text"> Alternative Pathways towards Sustainable</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>461</td><td><a class="text"> Development</a></td><td><a class="text"> and Climate Stabilization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>462</td><td><a class="text"> BAU</a></td><td><a class="text"> Business-As-Usual</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>463</td><td><a class="text"> BRICS</a></td><td><a class="text"> Brazil Russia India China South Africa</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>464</td><td><a class="text"> CBD</a></td><td><a class="text"> Convention on Biological Diversity</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>465</td><td><a class="text"> CBDR</a></td><td><a class="text"> Common But Differentiated Responsibility</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>466</td><td><a class="text"> CCS</a></td><td><a class="text"> Carbon Capture And Sequestration</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>467</td><td><a class="text"> CDP</a></td><td><a class="text"> Committee for Development Policy</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>468</td><td><a class="text"> CEB</a></td><td><a class="text"> Chief Executives Board for Coordination</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>469</td><td><a class="text"> CLEW</a></td><td><a class="text"> Climate-Land-Energy-Water</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>470</td><td><a class="text"> CLEWD</a></td><td><a class="text"> Climate-Land-Energy-Water-Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>471</td><td><a class="text"> CLEWS</a></td><td><a class="text"> Climate-Land-Energy-Water-Water Strategies</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>472</td><td><a class="text"> CLEWs</a></td><td><a class="text"> Global Resource Scenarios Of The Climate-LandEnergy And Water Nexus</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>473</td><td><a class="text"> COP</a></td><td><a class="text"> Conference of Parties</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>474</td><td><a class="text"> CSD</a></td><td><a class="text"> United Nations Commission on Sustainable Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>475</td><td><a class="text"> DAC</a></td><td><a class="text"> Development Assistance Committee</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>476</td><td><a class="text"> DAU</a></td><td><a class="text"> Dynamics-As-Usual</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>477</td><td><a class="text"> DMSP</a></td><td><a class="text"> Defense Meteorological Satellite Program</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>478</td><td><a class="text"> DSD</a></td><td><a class="text"> Division for Sustainable Development (of the United</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>479</td><td><a class="text"> Nations</a></td><td><a class="text"> Department of Economic and Social Affairs)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>480</td><td><a class="text"> ECESA</a></td><td><a class="text"> United Nations Executive Committee on Economic</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>481</td><td><a class="text"> and</a></td><td><a class="text"> Social Affairs</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>482</td><td><a class="text"> ECOSOC</a></td><td><a class="text"> Economic and Social Council</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>483</td><td><a class="text"> EJ</a></td><td><a class="text"> Exajoule</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>484</td><td><a class="text"> EPR</a></td><td><a class="text"> Environmental Performance Review</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>485</td><td><a class="text"> EVI</a></td><td><a class="text"> Enhanced Vegetation Index</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>486</td><td><a class="text"> FAO</a></td><td><a class="text"> Food and Agriculture Organization of the United Nations</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>487</td><td><a class="text"> FEEM</a></td><td><a class="text"> Fondazione Eni Enrico Mattei</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>488</td><td><a class="text"> forex</a></td><td><a class="text"> Foreign Exchange Market</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>489</td><td><a class="text"> GA</a></td><td><a class="text"> General Assembly</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>490</td><td><a class="text"> GBO</a></td><td><a class="text"> Global Biodiversity Outlook</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>491</td><td><a class="text"> GEA</a></td><td><a class="text"> Global Energy Assessment</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>492</td><td><a class="text"> GEO</a></td><td><a class="text"> Global Environment Outlook</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>493</td><td><a class="text"> GHG</a></td><td><a class="text"> Greenhouse Gas</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>494</td><td><a class="text"> GLUCOSE</a></td><td><a class="text"> Global Least-cost User-friendly CLEWs Open-Source</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>495</td><td><a class="text"> Exploratory</a></td><td><a class="text"> model</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>496</td><td><a class="text"> GNI</a></td><td><a class="text"> Gross National Income</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>497</td><td><a class="text"> GPI</a></td><td><a class="text"> Genuine Progress Indicator</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>498</td><td><a class="text"> GSG</a></td><td><a class="text"> Global Scenario Group</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>499</td><td><a class="text"> GSP</a></td><td><a class="text"> High-level Panel on Global Sustainability</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>500</td><td><a class="text"> HANPP</a></td><td><a class="text"> Human Appropriation Of Net Primary Production</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>501</td><td><a class="text"> OHRLLS</a></td><td><a class="text"> Office of the High-Representative for the Least</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>502</td><td><a class="text"> Developed</a></td><td><a class="text"> Countries Landlocked Developing Countries and Small Island Developing States</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>503</td><td><a class="text"> OSEMOSYS</a></td><td><a class="text"> Open Source Energy Modelling System</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>504</td><td><a class="text"> OWG</a></td><td><a class="text"> Open Working Group</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>505</td><td><a class="text"> PBL</a></td><td><a class="text"> Planbureau voor de Leefomgeving</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>506</td><td><a class="text"> PPP</a></td><td><a class="text"> Purchasing Power Parity</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>507</td><td><a class="text"> PRSP</a></td><td><a class="text"> Poverty Reduction Strategy Paper</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>508</td><td><a class="text"> R&D</a></td><td><a class="text"> Research And Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>509</td><td><a class="text"> RES</a></td><td><a class="text"> Reference Energy System</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>510</td><td><a class="text"> RES</a></td><td><a class="text"> United Nations Resolution</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>511</td><td><a class="text"> RITE</a></td><td><a class="text"> Research Institute of Innovative Technology for the Earth</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>512</td><td><a class="text"> ROI(s)</a></td><td><a class="text"> Return(S) On Investment</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>513</td><td><a class="text"> RSN-4</a></td><td><a class="text"> Report of the Fourth Meeting of the Regional Fishery</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>514</td><td><a class="text"> Body</a></td><td><a class="text"> Secretariats Network</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>515</td><td><a class="text"> SAB</a></td><td><a class="text"> Scientific Advisory Board</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>516</td><td><a class="text"> SBSTA</a></td><td><a class="text"> Subsidiary Body for Scientific and Technological Advice</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>517</td><td><a class="text"> SBSTTA</a></td><td><a class="text"> Subsidiary Body on Scientific Technical and</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>518</td><td><a class="text"> Technological</a></td><td><a class="text"> Advice</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>519</td><td><a class="text"> SCBD</a></td><td><a class="text"> Secretariat of the Convention on Biological Diversity</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>520</td><td><a class="text"> SD21</a></td><td><a class="text"> Sustainable Development in the 21st Century</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>521</td><td><a class="text"> SDA</a></td><td><a class="text"> Shared Development Agenda</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>522</td><td><a class="text"> SDG</a></td><td><a class="text"> Sustainable Development Goal</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>523</td><td><a class="text"> SDM</a></td><td><a class="text"> Security Distributing and Marketing</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>524</td><td><a class="text"> SDSN</a></td><td><a class="text"> Sustainable Development Solutions Network</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>525</td><td><a class="text"> SEA</a></td><td><a class="text"> Strategic Environmental Assessment</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>526</td><td><a class="text"> SEEA</a></td><td><a class="text"> United Nations Statistical Commission’s System of</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>527</td><td><a class="text"> Environmental-Economic</a></td><td><a class="text"> Accounting</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>528</td><td><a class="text"> SEI</a></td><td><a class="text"> Stockholm Environment Institute</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>529</td><td><a class="text"> SIDS</a></td><td><a class="text"> Small Island Developing States</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>530</td><td><a class="text"> SNAs</a></td><td><a class="text"> System of National Accounts</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>531</td><td><a class="text"> SPM</a></td><td><a class="text"> Summary for Policymakers</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>532</td><td><a class="text"> SRES</a></td><td><a class="text"> Special Report on Emissions Scenarios</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>533</td><td><a class="text"> SUMAMAD</a></td><td><a class="text"> Sustainable Management of Marginal Drylands</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>534</td><td><a class="text"> SUNY–ESF</a></td><td><a class="text"> State University of New York - College of Environmental Science and Forestry</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>535</td><td><a class="text"> TFSD</a></td><td><a class="text"> Task Force for Measuring Sustainable Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>536</td><td><a class="text"> TSIA</a></td><td><a class="text"> Trade Sustainability Impact Assessments</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>537</td><td><a class="text"> TWAS</a></td><td><a class="text"> The World Academy of Sciences</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>538</td><td><a class="text"> UCDP</a></td><td><a class="text"> Uppsala Conflict Data Program</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>539</td><td><a class="text"> UNCCD</a></td><td><a class="text"> United Nations Convention to Combat Desertification</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>540</td><td><a class="text"> UNCDF</a></td><td><a class="text"> United Nations Capital Development Fund</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>541</td><td><a class="text"> UN</a></td><td><a class="text"> DESA United Nations Department of Economic and Social Affairs</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>542</td><td><a class="text"> UNDG</a></td><td><a class="text"> United Nations Development Group</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>543</td><td><a class="text"> UNECE</a></td><td><a class="text"> United Nations Economic Commission for Europe</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>544</td><td><a class="text"> UNFCCC</a></td><td><a class="text"> United Nations Framework Convention on Climate Change</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>545</td><td><a class="text"> UNFF</a></td><td><a class="text"> United Nations Forum on Forests</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>546</td><td><a class="text"> UNGA</a></td><td><a class="text"> United Nations General Assembly</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>547</td><td><a class="text"> UNICRI</a></td><td><a class="text"> United Nations Interregional Crime and Justice Research Institute</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>548</td><td><a class="text"> UNISDR</a></td><td><a class="text"> United Nations International Strategy for Disaster Reduction</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>549</td><td><a class="text"> UNMAS</a></td><td><a class="text"> United Nations Mine Action Service</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>550</td><td><a class="text"> UNSC</a></td><td><a class="text"> United Nations Security Council</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>551</td><td><a class="text"> UNSCEAR</a></td><td><a class="text"> United Nations Scientific Committee on the Effects of Atomic Radiation</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>552</td><td><a class="text"> UNSD</a></td><td><a class="text"> United Nations Statistics Division</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>553</td><td><a class="text"> UNTT</a></td><td><a class="text"> United Nations System Task Team</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>554</td><td><a class="text"> UNWWAP</a></td><td><a class="text"> United Nations World Water Assessment Programme</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>555</td><td><a class="text"> USDA</a></td><td><a class="text"> United States Department of Agriculture</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>556</td><td><a class="text"> USFWS</a></td><td><a class="text"> United States Department of Fish and Wildlife Service</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>557</td><td><a class="text"> WBCSD</a></td><td><a class="text"> World Business Council for Sustainable Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>558</td><td><a class="text"> WDI</a></td><td><a class="text"> World Development Indicators</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>559</td><td><a class="text"> WEC</a></td><td><a class="text"> World Energy Council</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>560</td><td><a class="text"> WEF</a></td><td><a class="text"> World Economic Forum</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>561</td><td><a class="text"> WEO</a></td><td><a class="text"> World Economic Outlook</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>562</td><td><a class="text"> WESP</a></td><td><a class="text"> World Economic Situation and Prospects</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>563</td><td><a class="text"> WESS</a></td><td><a class="text"> World Economic and Social Survey</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>564</td><td><a class="text"> WITCH</a></td><td><a class="text"> World Induced Technical Change Hybrid</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>565</td><td><a class="text"> WWF</a></td><td><a class="text"> World Wildlife Fund</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>566</td><td><a class="text"> ACC</a></td><td><a class="text"> Administrative Committee on Coordination</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>567</td><td><a class="text"> AFG</a></td><td><a class="text"> African Governance Forum</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>568</td><td><a class="text"> APRM</a></td><td><a class="text"> Africa Peer Review Mechanism</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>569</td><td><a class="text"> ARV</a></td><td><a class="text"> Antiretroviral</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>570</td><td><a class="text"> CAADP</a></td><td><a class="text"> Comprehensive Africa Agriculture Development Programme</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>571</td><td><a class="text"> CAFRAD</a></td><td><a class="text"> African Training and Research Centre in Administration for Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>572</td><td><a class="text"> CCA</a></td><td><a class="text"> Common Country Assessment</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>573</td><td><a class="text"> CEB</a></td><td><a class="text"> United Nations System Chief Executives Board for Coordination</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>574</td><td><a class="text"> CITES</a></td><td><a class="text"> Convention on International Trade in Endangered Species of Wild Fauna and Flora</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>575</td><td><a class="text"> COP10</a></td><td><a class="text"> Tenth Session of the Conference of Parties</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>576</td><td><a class="text"> CSP</a></td><td><a class="text"> Child Survival Partnership</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>577</td><td><a class="text"> CTBTO</a></td><td><a class="text"> Preparatory Commission for the Comprehensive Nuclear-Test-Ban Treaty Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>578</td><td><a class="text"> CTC</a></td><td><a class="text"> Counter-Terrorism Committee</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>579</td><td><a class="text"> DRC</a></td><td><a class="text"> Democratic Republic of the Congo</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>580</td><td><a class="text"> ECHA</a></td><td><a class="text"> Executive Committee on Humanitarian Affairs</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>581</td><td><a class="text"> ECPS</a></td><td><a class="text"> Executive Committee on Peace and Security</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>582</td><td><a class="text"> EFA</a></td><td><a class="text"> Education for All</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>583</td><td><a class="text"> EFA-FTI</a></td><td><a class="text"> Education for All-FastTrack Initiative</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>584</td><td><a class="text"> EMG</a></td><td><a class="text"> Environmental Management Group</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>585</td><td><a class="text"> FAO</a></td><td><a class="text"> Food and Agriculture Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>586</td><td><a class="text"> FFDO</a></td><td><a class="text"> Financing for Development Office</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>587</td><td><a class="text"> GAVI</a></td><td><a class="text"> Global Alliance for Vaccines and Immunization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>588</td><td><a class="text"> GCOS</a></td><td><a class="text"> Global Observing System for Climate</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>589</td><td><a class="text"> GIVS</a></td><td><a class="text"> Global Immunization Vision and Strategy</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>590</td><td><a class="text"> Hib</a></td><td><a class="text"> Haemophius influenzae type b</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>591</td><td><a class="text"> HLCP</a></td><td><a class="text"> High-Level Committee on Programmes</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>592</td><td><a class="text"> HLSOC</a></td><td><a class="text"> High-Level Summit Organizing Committee</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>593</td><td><a class="text"> HURIST</a></td><td><a class="text"> OHCHR's and UNDP's joint programme on Human Rights Strengthening</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>594</td><td><a class="text"> IAAH</a></td><td><a class="text"> International Alliance Against Hunger</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>595</td><td><a class="text"> IANWGE</a></td><td><a class="text"> Inter-Agency Network on Women and Gender Equality</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>596</td><td><a class="text"> ICPO/Interpol</a></td><td><a class="text"> International Criminal Police Organization/Interpol</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>597</td><td><a class="text"> IGAC</a></td><td><a class="text"> International Group for Anti-Corruption Cooperation</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>598</td><td><a class="text"> ILO/STEP</a></td><td><a class="text"> International Labour Organization/Strategies and Tools against social Exclusion and Poverty</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>599</td><td><a class="text"> IMCI</a></td><td><a class="text"> Integrated Management of Childhood Illness</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>600</td><td><a class="text"> IPCC</a></td><td><a class="text"> Intergovernmental Panel on Climate Change</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>601</td><td><a class="text"> IPEC</a></td><td><a class="text"> ILO’s collaborative Programme for the Elimination of Child Labour</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>602</td><td><a class="text"> IPGRI</a></td><td><a class="text"> International Plant Genetic Resources Institute</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>603</td><td><a class="text"> ISDR</a></td><td><a class="text"> International Strategy for Disaster Reduction</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>604</td><td><a class="text"> LDCs</a></td><td><a class="text"> Least Developed Countries</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>605</td><td><a class="text"> LLDCs</a></td><td><a class="text"> Landlocked Developing Countries</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>606</td><td><a class="text"> MDG</a></td><td><a class="text"> Millennium Development Goals</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>607</td><td><a class="text"> OCHA</a></td><td><a class="text"> Office for the Coordination of Humanitarian Affairs</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>608</td><td><a class="text"> OSAA</a></td><td><a class="text"> Office of the Special Advisor on Africa</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>609</td><td><a class="text"> PARIS</a></td><td><a class="text"> 21 Partnership in Statistics for Development in the Twenty-First Century task team</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>610</td><td><a class="text"> PCNA</a></td><td><a class="text"> Preparation of comprehensive post-conflict needs assessments</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>611</td><td><a class="text"> PWG</a></td><td><a class="text"> Policy Working Group on the United Nations and Terrorism</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>612</td><td><a class="text"> RECs</a></td><td><a class="text"> Regional Economic Communities</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>613</td><td><a class="text"> RIASCO</a></td><td><a class="text"> Regional Interagency Coordination and Support Office</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>614</td><td><a class="text"> SCN</a></td><td><a class="text"> UN System Standing Committee on Nutrition</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>615</td><td><a class="text"> SMART</a></td><td><a class="text"> governance Simple moral accountable responsible and transparent governance</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>616</td><td><a class="text"> TB</a></td><td><a class="text"> Tuberculosis</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>617</td><td><a class="text"> UN</a></td><td><a class="text"> United Nations</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>618</td><td><a class="text"> UNDAF</a></td><td><a class="text"> United Nations Development Assistance Framework</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>619</td><td><a class="text"> UNDDA</a></td><td><a class="text"> United Nations Department for Disarmament Affairs</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>620</td><td><a class="text"> UN-DESA</a></td><td><a class="text"> United Nations Department of Economic and Social Affairs</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>621</td><td><a class="text"> UN-DPA</a></td><td><a class="text"> United Nations Department of Political Affairs</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>622</td><td><a class="text"> UN-DPKO</a></td><td><a class="text"> Department of Peacekeeping Operations</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>623</td><td><a class="text"> UNGEI</a></td><td><a class="text"> United Nations Girls' Education Initiative</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>624</td><td><a class="text"> UN-HABITAT</a></td><td><a class="text"> United Nations Human Settlements Programme</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>625</td><td><a class="text"> UNHCHR</a></td><td><a class="text"> United Nations High Commissioner for Human Rights</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>626</td><td><a class="text"> UNHCR</a></td><td><a class="text"> United Nations High Commissioner for Refugees</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>627</td><td><a class="text"> UNMISET</a></td><td><a class="text"> United Nations Mission of Support in East Timor</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>628</td><td><a class="text"> UN-OCHA</a></td><td><a class="text"> United Nations Office for the Coordination of Humanitarian Affairs</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>629</td><td><a class="text"> UNPAN</a></td><td><a class="text"> United Nations Online Network on Public Administration and Finance</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>630</td><td><a class="text"> UNSSC</a></td><td><a class="text"> United Nations System Staff College</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>631</td><td><a class="text"> WSIS</a></td><td><a class="text"> World Summit on the Information Society</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>632</td><td><a class="text"> WSSD</a></td><td><a class="text"> World Summit on Sustainable Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>633</td><td><a class="text"> WWAP</a></td><td><a class="text"> World Water Assessment Programme</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>634</td><td><a class="text"> WWDR</a></td><td><a class="text"> World Water Development Report</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>635</td><td><a class="text"> ALAC</a></td><td><a class="text"> Advice and Legal Aid Centre</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>636</td><td><a class="text"> ART</a></td><td><a class="text"> Anti-retroviral therapy</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>637</td><td><a class="text"> AU/PSC</a></td><td><a class="text"> African Union Peace and Security Council</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>638</td><td><a class="text"> CA</a></td><td><a class="text"> Consolidated Appeal</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>639</td><td><a class="text"> CAP</a></td><td><a class="text"> Consolidated Appeals Process (Inter-agency)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>640</td><td><a class="text"> CBCP</a></td><td><a class="text"> The Söderköping/Cross Border Cooperation Process</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>641</td><td><a class="text"> CBSA</a></td><td><a class="text"> Canada Border Services Agency</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>642</td><td><a class="text"> CCCM</a></td><td><a class="text"> Camp coordination and camp management (cluster)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>643</td><td><a class="text"> CEDAW</a></td><td><a class="text"> Committee on the Elimination of All Forms of Discrimination Against Women</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>644</td><td><a class="text"> CEB</a></td><td><a class="text"> Council of Europe Development Bank</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>645</td><td><a class="text"> CERF</a></td><td><a class="text"> Central Emergency Response Fund (formerly Central Emergency Revolving Fund)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>646</td><td><a class="text"> CHAP</a></td><td><a class="text"> Common Humanitarian Action Plan</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>647</td><td><a class="text"> CIC</a></td><td><a class="text"> Citizenship and Immigration Canada</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>648</td><td><a class="text"> CoE</a></td><td><a class="text"> Council of Europe</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>649</td><td><a class="text"> COP</a></td><td><a class="text"> Country Operations Plan</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>650</td><td><a class="text"> CPA</a></td><td><a class="text"> Comprehensive Plan of Action</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>651</td><td><a class="text"> CPR</a></td><td><a class="text"> Conflict Prevention and Post-Conflict Reconstruction Network</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>652</td><td><a class="text"> DAFI</a></td><td><a class="text"> Albert Einstein Academic Scholarship Programme for Refugees</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>653</td><td><a class="text"> DPKO</a></td><td><a class="text"> United Nations Department of Peacekeeping Operations</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>654</td><td><a class="text"> DRC</a></td><td><a class="text"> Danish Refugee Council</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>655</td><td><a class="text"> EC</a></td><td><a class="text"> European Commission</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>656</td><td><a class="text"> ECHO</a></td><td><a class="text"> European Commission Humanitarian Office</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>657</td><td><a class="text"> ECRE</a></td><td><a class="text"> European Council on Refugees and Exiles</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>658</td><td><a class="text"> EDF</a></td><td><a class="text"> European Development Fund</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>659</td><td><a class="text"> ELENA</a></td><td><a class="text"> European Legal Network on Asylum</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>660</td><td><a class="text"> EPRS</a></td><td><a class="text"> Emergency Preparedness and Response Section (UNHCR)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>661</td><td><a class="text"> ERC</a></td><td><a class="text"> Emergency Relief Coordinator (United Nations)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>662</td><td><a class="text"> EU</a></td><td><a class="text"> European Union</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>663</td><td><a class="text"> EUFOR</a></td><td><a class="text"> European Force</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>664</td><td><a class="text"> ExCom</a></td><td><a class="text"> Executive Committee of the High</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>665</td><td><a class="text"> Commissioner’s</a></td><td><a class="text"> Programme</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>666</td><td><a class="text"> FAO</a></td><td><a class="text"> Food and Agriculture Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>667</td><td><a class="text"> GLIA</a></td><td><a class="text"> Great Lakes Initiative for Africa</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>668</td><td><a class="text"> GTZ</a></td><td><a class="text"> Deutsche Gessellschaft fur Technische Zusammenarbeit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>669</td><td><a class="text"> IASC</a></td><td><a class="text"> Inter-Agency Standing Committee</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>670</td><td><a class="text"> ICMC</a></td><td><a class="text"> International Catholic Migration Commission</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>671</td><td><a class="text"> IDMC</a></td><td><a class="text"> Internal Displacement Monitoring Centre</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>672</td><td><a class="text"> IDP</a></td><td><a class="text"> Internally Displaced Person</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>673</td><td><a class="text"> IFRC</a></td><td><a class="text"> International Federation of Red Cross and Red Crescent Societies</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>674</td><td><a class="text"> IGASOM</a></td><td><a class="text"> IGAD Peace Support Mission in Somalia</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>675</td><td><a class="text"> IUCN</a></td><td><a class="text"> World Conservation Union</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>676</td><td><a class="text"> JAM</a></td><td><a class="text"> Joint Assessment of Needs Mission</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>677</td><td><a class="text"> JICA</a></td><td><a class="text"> Japan International Cooperation Agency</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>678</td><td><a class="text"> LAIC</a></td><td><a class="text"> Legal Aid and Information Centre</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>679</td><td><a class="text"> LOU</a></td><td><a class="text"> Letter of Understanding</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>680</td><td><a class="text"> MDGR</a></td><td><a class="text"> Millennium Development Goals Review</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>681</td><td><a class="text"> MDGs</a></td><td><a class="text"> Millennium Development Goals</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>682</td><td><a class="text"> MDRP</a></td><td><a class="text"> Multi-Country Demobilization and Reintegration Programme</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>683</td><td><a class="text"> MSRP</a></td><td><a class="text"> Management Systems Renewal Project</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>684</td><td><a class="text"> NAP</a></td><td><a class="text"> National Action Plan</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>685</td><td><a class="text"> NFIs</a></td><td><a class="text"> Non-food items</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>686</td><td><a class="text"> NRC</a></td><td><a class="text"> Norwegian Refugee Council</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>687</td><td><a class="text"> NWFP</a></td><td><a class="text"> North-West Frontier Province (Pakistan)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>688</td><td><a class="text"> Humanitarian</a></td><td><a class="text"> Affairs (United Nations)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>689</td><td><a class="text"> OHR</a></td><td><a class="text"> Office of the High Representative (Bosnia and Herzegovina)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>690</td><td><a class="text"> OIC</a></td><td><a class="text"> Organization of the Islamic Conference</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>691</td><td><a class="text"> Oversight</a></td><td><a class="text"> Services</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>692</td><td><a class="text"> OMS</a></td><td><a class="text"> Operations Management System</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>693</td><td><a class="text"> ONUCI</a></td><td><a class="text"> United Nations Mission in Côte d’Ivoire</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>694</td><td><a class="text"> PCWG</a></td><td><a class="text"> Protection Cluster Working Group</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>695</td><td><a class="text"> PISG</a></td><td><a class="text"> Provisional Institutions of Self-Government (Kosovo)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>696</td><td><a class="text"> QIPs</a></td><td><a class="text"> Quick Impact Projects</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>697</td><td><a class="text"> RLU</a></td><td><a class="text"> Regional Legal Unit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>698</td><td><a class="text"> SDC</a></td><td><a class="text"> Swiss Agency for Development and Cooperation</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>699</td><td><a class="text"> SGBV</a></td><td><a class="text"> Sexual and gender-based violence</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>700</td><td><a class="text"> SOLSES</a></td><td><a class="text"> Sustainable Options for Livelihood</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>701</td><td><a class="text"> Security</a></td><td><a class="text"> in Eastern Sudan</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>702</td><td><a class="text"> SRI</a></td><td><a class="text"> Sustainable Reintegration Initiative (Angola)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>703</td><td><a class="text"> SRS</a></td><td><a class="text"> Self-Reliance Strategy (Uganda)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>704</td><td><a class="text"> SRSA</a></td><td><a class="text"> Swedish Rescue Services Agency</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>705</td><td><a class="text"> UNAMSIL</a></td><td><a class="text"> United Nations Peacekeeping Mission in Sierra Leone</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>706</td><td><a class="text"> UNCAS</a></td><td><a class="text"> United Nations Common Air Services for Somalia</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>707</td><td><a class="text"> UNCT</a></td><td><a class="text"> United Nations Country Team</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>708</td><td><a class="text"> UNDCP</a></td><td><a class="text"> United Nations International Drug Control Programme</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>709</td><td><a class="text"> UNDSS</a></td><td><a class="text"> United Nations Department of Safety and Security</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>710</td><td><a class="text"> UNHAS</a></td><td><a class="text"> United Nations Humanitarian Air Service</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>711</td><td><a class="text"> UN-IP</a></td><td><a class="text"> United Nations Integrated Development Programme</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>712</td><td><a class="text"> UNIOB</a></td><td><a class="text"> United Nations Integrated Office in Burundi</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>713</td><td><a class="text"> UNIOSIL</a></td><td><a class="text"> United Nations Integrated Office in Sierra Leone</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>714</td><td><a class="text"> UNJLS</a></td><td><a class="text"> United Nations Joint Logistics Centre</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>715</td><td><a class="text"> UNVs</a></td><td><a class="text"> United Nations Volunteers</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>716</td><td><a class="text"> WASH</a></td><td><a class="text"> Water Sanitation and Hygiene (cluster)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>717</td><td><a class="text"> ZAR</a></td><td><a class="text"> Zone d’accueil des réfugiés</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>718</td><td><a class="text"> ACMAD</a></td><td><a class="text"> African Centre of Meteorological Application for Development</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>719</td><td><a class="text"> ACE</a></td><td><a class="text"> Assessment and Classification in Emergencies</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>720</td><td><a class="text"> ACT</a></td><td><a class="text"> Action by Churches Together</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>721</td><td><a class="text"> AO</a></td><td><a class="text"> Administrative Office</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>722</td><td><a class="text"> ASP</a></td><td><a class="text"> Associates Surge Pool</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>723</td><td><a class="text"> AUC</a></td><td><a class="text"> African Union Commission</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>724</td><td><a class="text"> BCPR</a></td><td><a class="text"> Bureau of Crisis Prevention and Recovery</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>725</td><td><a class="text"> BNPB</a></td><td><a class="text"> National Coordinating Agency for Disaster Management</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>726</td><td><a class="text"> CAR</a></td><td><a class="text"> Central African Republic</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>727</td><td><a class="text"> CCA</a></td><td><a class="text"> la Cellule crises alimentaires</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>728</td><td><a class="text"> CDI</a></td><td><a class="text"> Côte d’Ivoire</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>729</td><td><a class="text"> CHF</a></td><td><a class="text"> Common Humanitarian Fund</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>730</td><td><a class="text"> CIC</a></td><td><a class="text"> le Centre d’information et de communication</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>731</td><td><a class="text"> CO</a></td><td><a class="text"> Country Office</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>732</td><td><a class="text"> CMCS</a></td><td><a class="text"> Civil-Military Coordination Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>733</td><td><a class="text"> CPA</a></td><td><a class="text"> Comprehensive Peace Agreement</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>734</td><td><a class="text"> CPIA</a></td><td><a class="text"> Comité Permanent Inter-Agences</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>735</td><td><a class="text"> CRD</a></td><td><a class="text"> Coordination and Response Division</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>736</td><td><a class="text"> CSS</a></td><td><a class="text"> Communications Services Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>737</td><td><a class="text"> DAI</a></td><td><a class="text"> Development Alternatives Inc</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>738</td><td><a class="text"> DDR</a></td><td><a class="text"> Disarmament Demobilization and Reintegration</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>739</td><td><a class="text"> DERC</a></td><td><a class="text"> Deputy Emergency Relief Coordinator</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>740</td><td><a class="text"> DHC</a></td><td><a class="text"> Deputy Humanitarian Coordinators</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>741</td><td><a class="text"> DIS</a></td><td><a class="text"> Détachement intégré de sécurité</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>742</td><td><a class="text"> DO</a></td><td><a class="text"> Designated Official</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>743</td><td><a class="text"> DPSS</a></td><td><a class="text"> Displacement and Protection Support Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>744</td><td><a class="text"> DSS</a></td><td><a class="text"> Department of Safety and Security</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>745</td><td><a class="text"> DRR</a></td><td><a class="text"> Disaster Risk Reduction</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>746</td><td><a class="text"> DRS</a></td><td><a class="text"> Donor Relations Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>747</td><td><a class="text"> DSRSG</a></td><td><a class="text"> Deputy Special Representative of the Secretary-General</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>748</td><td><a class="text"> DVPS</a></td><td><a class="text"> Disaster and Vulnerability Policy Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>749</td><td><a class="text"> ECO</a></td><td><a class="text"> Economic Cooperation Organization</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>750</td><td><a class="text"> EGS</a></td><td><a class="text"> Evaluation and Guidance Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>751</td><td><a class="text"> EHRP</a></td><td><a class="text"> Emergency Humanitarian Response Plan</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>752</td><td><a class="text"> EO</a></td><td><a class="text"> Executive Office</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>753</td><td><a class="text"> EPS</a></td><td><a class="text"> Emergency Preparedness Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>754</td><td><a class="text"> ERCC</a></td><td><a class="text"> Emergency Relief Coordination Centre</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>755</td><td><a class="text"> ERPS</a></td><td><a class="text"> External Relations and Partnership Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>756</td><td><a class="text"> ERR</a></td><td><a class="text"> Emergency Response Roster</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>757</td><td><a class="text"> ESB</a></td><td><a class="text"> Emergency Services Branch</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>758</td><td><a class="text"> FATA</a></td><td><a class="text"> Federally Administered Tribal Areas</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>759</td><td><a class="text"> FCS</a></td><td><a class="text"> Funding Coordination Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>760</td><td><a class="text"> FCSS</a></td><td><a class="text"> Field Coordination Support Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>761</td><td><a class="text"> GAT</a></td><td><a class="text"> Gender Advisory Team</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>762</td><td><a class="text"> GCC</a></td><td><a class="text"> Gulf Cooperation Council</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>763</td><td><a class="text"> GCMS</a></td><td><a class="text"> Geographical Coordination and Monitoring Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>764</td><td><a class="text"> GHP</a></td><td><a class="text"> Global Humanitarian Platform</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>765</td><td><a class="text"> GRAD</a></td><td><a class="text"> Gaza Response Activities Database</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>766</td><td><a class="text"> HCSS</a></td><td><a class="text"> Humanitarian Coordination Support Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>767</td><td><a class="text"> HCT</a></td><td><a class="text"> Humanitarian Country Team</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>768</td><td><a class="text"> HDPT</a></td><td><a class="text"> Humanitarian and Development Partnership Team</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>769</td><td><a class="text"> HIPC</a></td><td><a class="text"> Heavily Indebted Poor Countries</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>770</td><td><a class="text"> HLC</a></td><td><a class="text"> High Level Committee</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>771</td><td><a class="text"> HMSF</a></td><td><a class="text"> Humanitarian Multi-Stakeholder Fund</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>772</td><td><a class="text"> HoO</a></td><td><a class="text"> Head(s) of Office</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>773</td><td><a class="text"> HRF</a></td><td><a class="text"> Humanitarian Response Fund</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>774</td><td><a class="text"> HIS</a></td><td><a class="text"> Humanitarian Studies Institute</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>775</td><td><a class="text"> HQ</a></td><td><a class="text"> Headquarter(s)</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>776</td><td><a class="text"> HSU</a></td><td><a class="text"> Humanitarian Support Unit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>777</td><td><a class="text"> IDRL</a></td><td><a class="text"> International Disaster Response Law</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>778</td><td><a class="text"> IGSS</a></td><td><a class="text"> Inter-Governmental Support Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>779</td><td><a class="text"> IM</a></td><td><a class="text"> information management</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>780</td><td><a class="text"> IMTF</a></td><td><a class="text"> Integrated Missions Task Forces</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>781</td><td><a class="text"> INSARAG</a></td><td><a class="text"> International Search and Rescue Advisory Group</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>782</td><td><a class="text"> IRI</a></td><td><a class="text"> International Research Institute</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>783</td><td><a class="text"> IRIN</a></td><td><a class="text"> Integrated Regional Information Networks</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>784</td><td><a class="text"> ISG</a></td><td><a class="text"> Integration Steering Group</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>785</td><td><a class="text"> ISS</a></td><td><a class="text"> Information Services Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>786</td><td><a class="text"> ITF</a></td><td><a class="text"> Integrated Task Forces</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>787</td><td><a class="text"> ITS</a></td><td><a class="text"> Information Technologies Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>788</td><td><a class="text"> KMD</a></td><td><a class="text"> Kenya Meteorological Department</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>789</td><td><a class="text"> LSU</a></td><td><a class="text"> Logistics Support Unit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>790</td><td><a class="text"> LTTELiberation</a></td><td><a class="text"> Tigers of Tamil Eelam</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>791</td><td><a class="text"> M&E</a></td><td><a class="text"> Monitoring and Evaluation</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>792</td><td><a class="text"> MICOPAX</a></td><td><a class="text"> Peace-building Mission in CAR</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>793</td><td><a class="text"> NAF</a></td><td><a class="text"> Needs Analysis Framework</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>794</td><td><a class="text"> ODSG</a></td><td><a class="text"> OCHA Donor Support Group</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>795</td><td><a class="text"> oPt</a></td><td><a class="text"> occupied Palestinian territory</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>796</td><td><a class="text"> PAF</a></td><td><a class="text"> Performance and Accountability Framework</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>797</td><td><a class="text"> PBSO</a></td><td><a class="text"> Peacebuilding Support Office</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>798</td><td><a class="text"> PDDR</a></td><td><a class="text"> Prevention Disarmament Demobilization Reintegration</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>799</td><td><a class="text"> PDSB</a></td><td><a class="text"> Policy Development and Studies Branch</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>800</td><td><a class="text"> PHT</a></td><td><a class="text"> Pacific Humanitarian Team</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>801</td><td><a class="text"> PIC</a></td><td><a class="text"> Pandemic Influenza Contingency Project</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>802</td><td><a class="text"> PoC</a></td><td><a class="text"> Protection of Civilians</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>803</td><td><a class="text"> PoCS</a></td><td><a class="text"> Protection of Civilians Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>804</td><td><a class="text"> PPAS</a></td><td><a class="text"> Policy Planning and Analysis Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>805</td><td><a class="text"> ProCap</a></td><td><a class="text"> Protection Standby Capacity Project</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>806</td><td><a class="text"> PSEA</a></td><td><a class="text"> Protection from Sexual Exploitation and Abuse</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>807</td><td><a class="text"> RCC</a></td><td><a class="text"> Recovery Coordination Centre</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>808</td><td><a class="text"> RC/HC</a></td><td><a class="text"> Resident Coordinator/Humanitarian Coordinator</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>809</td><td><a class="text"> RDT</a></td><td><a class="text"> Regional Directors Team</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>810</td><td><a class="text"> RECRegional</a></td><td><a class="text"> Economic Commission</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>811</td><td><a class="text"> REDLAC</a></td><td><a class="text"> Latin America and Caribbean Network</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>812</td><td><a class="text"> RESO</a></td><td><a class="text"> Roaming Emergency Surge Officers</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>813</td><td><a class="text"> RIACSO</a></td><td><a class="text"> Regional Inter Agency Coordination Support Office</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>814</td><td><a class="text"> RO</a></td><td><a class="text"> Regional Office</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>815</td><td><a class="text"> ROAP</a></td><td><a class="text"> Regional Office for Asia and the Pacific</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>816</td><td><a class="text"> ROLAC</a></td><td><a class="text"> Regional Office for Latin America and the Caribbean</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>817</td><td><a class="text"> ROMENACA</a></td><td><a class="text"> Regional Office for the Middle East North Africa and Central Asia</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>818</td><td><a class="text"> ROSEA</a></td><td><a class="text"> Regional Office for Southern and Eastern Africa</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>819</td><td><a class="text"> ROWCA</a></td><td><a class="text"> Regional Office for West and Central Africa</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>820</td><td><a class="text"> RRM</a></td><td><a class="text"> Rapid Response Mechanism</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>821</td><td><a class="text"> RRR</a></td><td><a class="text"> Rapid Response Reserve</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>822</td><td><a class="text"> SAP</a></td><td><a class="text"> le Système d'alerte précoce</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>823</td><td><a class="text"> SARCOF</a></td><td><a class="text"> Southern Africa Regional Climate Outlook Forum</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>824</td><td><a class="text"> SBPP</a></td><td><a class="text"> Stand-By Partnerships Programme</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>825</td><td><a class="text"> SCS</a></td><td><a class="text"> Surge Capacity Section</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>826</td><td><a class="text"> SOPAC</a></td><td><a class="text"> Pacific Islands Applied Geoscience Commission</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>827</td><td><a class="text"> SPU</a></td><td><a class="text"> Strategic Planning Unit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>828</td><td><a class="text"> SRO</a></td><td><a class="text"> Sub-Regional Office</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>829</td><td><a class="text"> SSR</a></td><td><a class="text"> Security Sector Reform</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>830</td><td><a class="text"> STAREC</a></td><td><a class="text"> Stabilization and Reconstruction Plan</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>831</td><td><a class="text"> STERP</a></td><td><a class="text"> Short Term Emergency Recovery Plan</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>832</td><td><a class="text"> TCG</a></td><td><a class="text"> Tripartite Core Group</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>833</td><td><a class="text"> TOR</a></td><td><a class="text"> Terms of Reference</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>834</td><td><a class="text"> TPU</a></td><td><a class="text"> Telecommunications Partnership Unit</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>835</td><td><a class="text"> Umoja</a></td><td><a class="text"> United Nations Enterprise Resource Planning project</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>836</td><td><a class="text"> UNDAC</a></td><td><a class="text"> United Nations Disaster Assessment and Coordination</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>837</td><td><a class="text"> UNETT</a></td><td><a class="text"> United Nations Emergency Technical Team</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>838</td><td><a class="text"> UNHCR</a></td><td><a class="text"> United Nations High Commissioner for Refugees</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>839</td><td><a class="text"> UNOOSA</a></td><td><a class="text"> United Nations Office for Outer Space Affairs</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>840</td><td><a class="text"> UNOSAT</a></td><td><a class="text"> United Nations Operational Satellite</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>841</td><td><a class="text"> UNSSSS</a></td><td><a class="text"> United Nations Security and Stabilization Support Strategy</a></td><td> 2018-05-10T16</td></tr>
+                        <tr><td>842</td><td><a class="text"> WSS</a></td><td><a class="text"> Web Services Section</a></td><td> 2018-05-10T16</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- All Jquery -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <script type="text/javascript">
+	function searchList() {
+		var input, filter, ul, li, a, i;
+		input = document.getElementById("mySearch");
+		filter = input.value.toUpperCase();
+		ul = document.getElementById("myUL");
+		li = ul.getElementsByTagName("tr");
+		for (i = 0; i < li.length; i++) {
+			a = li[i].getElementsByClassName("text")[0];
+			if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+				li[i].style.display = "";
+			} else {
+				li[i].style.display = "none";
+	
+			}
+		}
+	}
+	</script>
+</body>
+
+</html>
